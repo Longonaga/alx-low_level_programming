@@ -9,13 +9,13 @@
 *on success return no error
 */
 
-void _puts(char *str)
+void _puts(char *str) 
 {
-         int i = 0;
-	 while(*(str + 1) != "\0")
-	   {
-	     putchar(*(str + 1));
-	     i++;
-	   }
-	 putchar(10);
-}	 
+int i; 
+  
+for (i = 0; str[i] != '\0'; i++)
+{ 
+_putchar(str[i]); 
+}
+_putchar('\n'); 
+}
